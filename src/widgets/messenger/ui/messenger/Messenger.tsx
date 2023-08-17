@@ -19,7 +19,7 @@ const initialMessages: Message[] = [
 export const Messenger = () => {
 	const [messages, setMessages] = useState<Message[]>(initialMessages)
 
-	const onSubmit = async (_: MouseEvent<HTMLButtonElement>, value: string) => {
+	const onSubmit = async (value: string) => {
 		if (value === "") {
 			return
 		}
