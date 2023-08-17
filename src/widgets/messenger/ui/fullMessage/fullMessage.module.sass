@@ -1,0 +1,40 @@
+.fullMessage
+  gap: 13rem
+  display: flex
+
+.fullMessage__icon
+  animation: appear 0.3s ease forwards
+
+.fullMessage__message
+  animation: appear 0.3s ease forwards
+
+.fullMessage__letter
+  opacity: 0
+  animation: letterAppear 0.3s ease forwards
+
+.left .fullMessage__message
+  transform-origin: left
+
+.right .fullMessage__message
+  transform-origin: right
+
+.left
+  display: flex
+
+.right
+  flex-direction: row-reverse
+
+@keyframes letterAppear
+  0%
+    opacity: 0
+  100%
+    opacity: 1
+
+@keyframes appear
+  0%
+    opacity: 0
+    transform: scale(0)
+  100%
+    opacity: 1
+    transform: scale(1)
+

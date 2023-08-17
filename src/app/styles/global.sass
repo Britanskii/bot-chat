@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans:wght@400;700&display=swap')
+
+\:root
+  //fonts
+  font-size: 1px
+  --font-family-title:  'Open Sans', sans-serif
+  --font-family-text: 'Inter', sans-serif
+
+  --font-size-l: 58rem
+  --font-size-m: 20rem
+  --font-size-r: 18rem
+
+  --font-title-l: var(--font-size-l) var(--font-family-title)
+
+  --font-regular-m: var(--font-size-m) var(--font-family-text)
+  --font-regular-r: var(--font-size-r) var(--font-family-text)
+
+  //radius
+  --border-radius-l: 28rem
+  --border-radius-m: 18rem
+
+
+  //colors
+  --accent: #007AFE
+  --secondary: #D3E4FD
+  --third: #0A3F8E
+  --text: #FFFFFF
+  --text-inverted: #000000
+  --text-secondary: #CED0D6
+  --background: #FFFFFF
+
+  --white: #ffffff
+  --black: #000000
+
+@media (max-width: 1440px)
+  \:root
+    font-size: .07vw
+
+#root
+  color: var(--text)
+  width: 100%
+  height: 100%
+  font: var(--font-regular-r)
